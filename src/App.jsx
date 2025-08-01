@@ -516,9 +516,9 @@ export default function App() {
         })()
         }
       </div >
-      {/* Компонент меню */}
-      < BottomMenu
+      <BottomMenu
         currentSection={section + 1}
+        currentSubSection={subSection}
         onNavigate={(sectionId) => {
           setSection(sectionId - 1);
           setSubSection(0);
