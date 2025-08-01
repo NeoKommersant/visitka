@@ -1,10 +1,10 @@
 import { useRef, useEffect, useState } from 'react';
 import gsap from 'gsap';
 import BottomMenu from './components/BottomMenu';
-import backIcon from '../public/icons/back.png';
-import forwardIcon from '../public/icons/forward.png';
-import repeatIcon from '../public/icons/repeat.png';
-import downIcon from '../public/icons/down.png';
+import backIcon from '/icons/back.png';
+import forwardIcon from '/icons/forward.png';
+import repeatIcon from '/icons/repeat.png';
+import downIcon from '/icons/down.png';
 export default function App() {
   const containerRef = useRef(null);
   const contentRef = useRef(null);
@@ -285,7 +285,7 @@ export default function App() {
                   }
                 }}
               >
-                <source src="./assets/videos/lol.mp4" type="video/mp4" />
+                <source src="/videos/lol.mp4" type="video/mp4" />
                 Ваш браузер не поддерживает видео.
               </video>
             </div>
@@ -329,7 +329,7 @@ export default function App() {
               <div className="w-[90%] mx-auto mt-4">
                 <div className="bg-primary-medium rounded-3xl">
                   <div className="cursor-pointer transition-all duration-300 hover:scale-105">
-                    <img src="./assets/images/test1.jpg" alt="Лучший Кейс" className="w-full h-[10rem] rounded-3xl shadow-lg mb-2" />
+                    <img src="/images/test1.jpg" alt="Лучший Кейс" className="w-full h-[10rem] rounded-3xl shadow-lg mb-2" />
                     <h3 className="text-white text-xl font-bold pl-4 pb-1"> Лучший кейс </h3>
                     <h4 className="text-white text-base pl-4 pb-4"> Маркетинг с нуля для премиум-спортзала </h4>
                   </div>
@@ -341,7 +341,7 @@ export default function App() {
                 {/* Кейс 1 */}
                 <div className="flex-1 cursor-pointer transition-all duration-300 hover:scale-105">
                   <div className="h-28 w-28 overflow-hidden rounded-2xl mb-2">
-                    <img src="./assets/images/test2.jpg" alt="Кейс 2" className="w-full h-full object-cover" />
+                    <img src="/images/test2.jpg" alt="Кейс 2" className="w-full h-full object-cover" />
                   </div>
                   <h3 className="text-white text-sm font-bold text-center pb-1">"АМЕТИСТ"</h3>
                   <h4 className="text-white text-sm text-center">Строительство</h4>
@@ -349,7 +349,7 @@ export default function App() {
                 {/* Кейс 2 */}
                 <div className="flex-1 cursor-pointer transition-all duration-300 hover:scale-105">
                   <div className="h-28 w-28 overflow-hidden rounded-2xl mb-2">
-                    <img src="./assets/images/test3.jpg" alt="Кейс 3" className="w-full h-full object-cover" />
+                    <img src="/images/test3.jpg" alt="Кейс 3" className="w-full h-full object-cover" />
                   </div>
                   <h3 className="text-white text-sm font-bold text-center pb-1">"В ОБЛАКАХ"</h3>
                   <h4 className="text-white text-sm text-center">HoReCa</h4>
@@ -357,7 +357,7 @@ export default function App() {
                 {/* Кейс 3 */}
                 <div className="flex-1 cursor-pointer transition-all duration-300 hover:scale-105">
                   <div className="h-28 w-28 overflow-hidden rounded-2xl mb-2">
-                    <img src="./assets/images/test4.jpg" alt="Кейс 4" className="w-full h-full object-cover" />
+                    <img src="/images/test4.jpg" alt="Кейс 4" className="w-full h-full object-cover" />
                   </div>
                   <h3 className="text-white text-sm font-bold text-center pb-1">"ДОМ СТРАХА"</h3>
                   <h4 className="text-white text-sm text-center">Развлечения</h4>
@@ -375,7 +375,7 @@ export default function App() {
 
                   <h3 className="text-white text-xl font-bold pt-3 pb-3 text-center"> И ВОТ ПОЧЕМУ: </h3>
                   <div className="relative">
-                    <img src="./assets/images/test5.jpg" alt="Худший Кейс" className="w-full h-[22rem] rounded-3xl shadow-lg mb-2" />
+                    <img src="/images/test5.jpg" alt="Худший Кейс" className="w-full h-[22rem] rounded-3xl shadow-lg mb-2" />
                     <button
                       className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
                     text-white text-xl font-bold text-center py-3 px-6 rounded-xl
@@ -425,7 +425,7 @@ export default function App() {
                       }}
                     >
                       <img
-                        src={`./assets/images/logo${index + 1}.png`}
+                        src={`/images/logo${index + 1}.png`}
                         alt={`Логотип клиента ${index + 1}`}
                         className="w-full h-full object-contain p-2 
                                  grayscale transition-all duration-300 
