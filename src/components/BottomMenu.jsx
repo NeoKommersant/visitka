@@ -100,7 +100,7 @@ const BottomMenu = ({ currentSection, currentSubSection = 0, onNavigate }) => {
                      opacity: 1,
                      y: 0,
                      duration: 0.3,
-                     ease: "back.out"g
+                     ease: "back.out"
                   });
                }
             });
